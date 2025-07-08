@@ -1,0 +1,1 @@
+Trening długich uderzeń na pełnowymiarowym polu.

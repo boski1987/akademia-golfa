@@ -1,0 +1,1 @@
+Precyzja to klucz — doskonal krótką grę.

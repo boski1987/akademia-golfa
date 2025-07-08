@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Golf Academy / Pole Golfowe</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-50 font-sans">
+
+  <!-- Hero with large background image -->
+  <section class="relative h-screen">
+    <img src="img/golf1.jpg"
+         alt="Pole golfowe" class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 h-full flex flex-col items-center justify-center bg-black bg-opacity-40 text-white text-center px-4">
+      <h1 id="hero-title" class="text-5xl font-bold mb-4"></h1>
+      <p id="hero-subtitle" class="text-xl max-w-xl"></p>
+      <a href="#signup" class="mt-6 bg-green-600 py-3 px-6 rounded-full hover:bg-green-700 transition">Zapisz się</a>
+    </div>
+  </section>
+
+  <!-- Features section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h3 id="features-1-title" class="text-2xl font-semibold text-green-800 mb-2"></h3>
+        <p id="features-1-text"></p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h3 id="features-2-title" class="text-2xl font-semibold text-green-800 mb-2"></h3>
+        <p id="features-2-text"></p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h3 id="features-3-title" class="text-2xl font-semibold text-green-800 mb-2"></h3>
+        <p id="features-3-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About/Benefits -->
+  <section class="bg-green-100 py-16">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 id="about-title" class="text-3xl font-bold text-green-800 mb-4"></h2>
+      <div id="about-text" class="text-lg text-green-700"></div>
+    </div>
+  </section>
+
+  <!-- Sign-up -->
+<section id="kontakt" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:space-x-8 space-y-8 md:space-y-0">
+    <!-- Left: Info blocks -->
+    <div class="flex-1 space-y-8">
+      <div class="flex items-start space-x-4">
+        <div class="text-green-700 text-3xl">🏌️‍♂️</div>
+        <div>
+          <h3 class="text-2xl font-semibold">Pole Golfowe 18h i 9h</h3>
+          <p class="text-gray-600">Pole Golfowe, które jest dopasowane pod względem odpowiedniego poziomu trudności. Przyjemna gra w wyśmienitych warunkach.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="text-green-700 text-3xl">🏌️‍♀️</div>
+        <div>
+          <h3 class="text-2xl font-semibold">Wypożyczalnia sprzętu</h3>
+          <p class="text-gray-600">Możliwość wypożyczenia sprzętu na terenie klubu. W ofercie mamy Club Car, Trolley, Sety Kijów oraz piłeczki golfowe.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="text-green-700 text-3xl">⛳</div>
+        <div>
+          <h3 class="text-2xl font-semibold">Rozwijaj swoje umiejętności</h3>
+          <p class="text-gray-600">Jesteś początkującym golfistą, który marzy o mistrzowskim poziomie? Nasze treningi pomogą Ci go osiągnąć.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Contact form -->
+    <div class="flex-1 bg-gray-50 p-8 rounded-2xl shadow-md">
+      <form class="space-y-4">
+        <input type="text" placeholder="Imię" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-400" required>
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-400" required>
+        <input type="text" placeholder="Temat" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-400">
+        <textarea placeholder="Wiadomość" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-400"></textarea>
+        <button type="submit" class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition w-full md:w-auto">Wyślij</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="map" class="relative w-full">
+  <div class="relative w-full" style="height: 100vh;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9766.787785500424!2d20.653691!3d52.5335844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ea3fdab9ac985%3A0x4210c863d3a95d69!2sLisia%20Polana%20Club%20House%2C%20Pomocnia%209%2C%2005-180%20Pomocnia!5e0!3m2!1spl!2spl!4v1720547165804!5m2!1spl!2spl"
+      class="absolute top-0 left-0 w-full h-full border-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Gallery -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 id="gallery-title" class="text-3xl font-bold text-green-800 text-center mb-8"></h2>
+      <div id="gallery-content" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-white py-8">
+    <div id="footer-content" class="max-w-4xl mx-auto text-center space-y-2"></div>
+  </footer>
+
+  <script>
+    const sections = [
+      {id: 'hero-title', file: 'hero-title.md'},
+      {id: 'hero-subtitle', file: 'hero-subtitle.md'},
+      {id: 'features-1-title', file: 'features-1-title.md'},
+      {id: 'features-1-text', file: 'features-1-text.md'},
+      {id: 'features-2-title', file: 'features-2-title.md'},
+      {id: 'features-2-text', file: 'features-2-text.md'},
+      {id: 'features-3-title', file: 'features-3-title.md'},
+      {id: 'features-3-text', file: 'features-3-text.md'},
+      {id: 'about-title', file: 'about-title.md'},
+      {id: 'about-text', file: 'about-text.md'},
+      {id: 'signup-title', file: 'signup-title.md'},
+      {id: 'gallery-title', file: 'gallery-title.md'},
+      {id: 'gallery-content', file: 'gallery.md'},
+      {id: 'footer-content', file: 'footer.md'}
+    ];
+    sections.forEach(section => {
+      fetch(section.file)
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById(section.id).innerHTML = marked.parse(text);
+        });
+    });
+  </script>
+
+</body>
+</html>

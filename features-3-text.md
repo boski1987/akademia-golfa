@@ -1,0 +1,1 @@
+Certyfikowani trenerzy stworzą idealny plan.
