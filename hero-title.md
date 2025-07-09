@@ -1,1 +1,1 @@
-Free Golf Academy
+Darmowa akademia golfa — poznaj nasz sport
