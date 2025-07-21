@@ -156,6 +156,32 @@
         });
     });
   </script>
+<script>
+fetch('https://twoja-domena.pl/wp-json/wp/v2/posts?_embed&per_page=3')
+  .then(response => response.json())
+  .then(posts => {
+    const container = document.getElementById('blog-posts');
+    container.innerHTML = posts.map(post => {
+      const title = post.title.rendered;
+      const excerpt = post.excerpt.rendered;
+      const link = post.link;
+      const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+
+      return `
+        <article class="news-item">
+          ${image ? `<img src="${image}" alt="" class="news-image" />` : ''}
+          <h3 class="news-title">${title}</h3>
+          <div class="news-excerpt">${excerpt}</div>
+          <a href="${link}" target="_blank" class="news-readmore">Czytaj więcej →</a>
+        </article>
+      `;
+    }).join('');
+  })
+  .catch(err => {
+    console.error('Błąd podczas pobierania aktualności:', err);
+    document.getElementById('blog-posts').innerHTML = '<p>Nie udało się załadować aktualności.</p>';
+  });
+</script>
 
 </body>
 </html>
